@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manage Blog - InnovaSci Admin</title>
+<link rel="stylesheet" href="../assets/css/admin.css">
+<script type="module" src="../assets/js/admin.js"></script>
+</head>
+<body>
+
+<h1>Blog CMS</h1>
+
+<section class="add-blog">
+<h2>Add New Article</h2>
+<form id="add-blog-form">
+<input type="text" id="blog-title" placeholder="Title" required>
+<input type="text" id="blog-category" placeholder="Category" required>
+<input type="text" id="blog-tags" placeholder="Tags (comma separated)">
+<input type="file" id="blog-image" accept="image/*">
+<textarea id="blog-content" placeholder="Write content here..." required></textarea>
+<button type="submit">Add Article</button>
+</form>
+</section>
+
+<section class="blog-list">
+<h2>Existing Articles</h2>
+<div id="blog-articles-container"></div>
+</section>
+
+</body>
+</html>
